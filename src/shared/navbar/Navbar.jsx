@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import logo from '../../assets/images/logo.png'
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,11 +39,8 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
-          <div className="text-2xl font-bold text-white tracking-widest flex items-center gap-2">
-            <span className="text-amber-400">STALLION</span>
-            <span className="text-[10px] font-light block leading-none opacity-70">FANTASY<br />LEAGUE</span>
-          </div>
+        <Link to="/" className="flex items-center gap-2 w-[54px] h-[48px] [aspect-ratio:9/8]">
+          <img src={logo} alt="" srcset="" className="w-[54px] h-[48px] [aspect-ratio:9/8]" />
         </Link>
 
         {/* Desktop Nav Links */}
