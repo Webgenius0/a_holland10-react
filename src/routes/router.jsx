@@ -43,7 +43,7 @@
 //           },
 //         ],
 //       },
-    
+
 //       //Admin Dashboard layout
 //       {
 //         path: '/',
@@ -85,7 +85,7 @@
 //             path: '/students/:id',
 //             element: <StudentProfile />,
 //           },
-    
+
 //           // if page now found
 //           {
 //             path: '*',
@@ -93,7 +93,7 @@
 //           },
 //         ],
 //       },
-    
+
 //       //Admin Dashboard layout
 //       {
 //         path: '/employer-dashboard',
@@ -131,7 +131,7 @@
 //             path: 'job-listing/create-job',
 //             element: <CreateJob />,
 //           },
-    
+
 //           // if page now found
 //           {
 //             path: '*',
@@ -148,6 +148,8 @@
 
 import Layout from '@/layout/Layout';
 import Home from '@/pages/main/Home';
+import FaqPage from '@/pages/main/FaqPage';
+import Contact from '@/pages/Contact';
 import { createBrowserRouter } from 'react-router-dom';
 
 const router = createBrowserRouter([
@@ -159,8 +161,18 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home />,
       },
+      {
+        path: '/faq',
+        element: <FaqPage />,
+      },
+      {
+        path: '/contact',
+        element: <Contact />,
+      },
     ],
   },
 ]);
+
+
 
 export default router;

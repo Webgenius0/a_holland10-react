@@ -118,3 +118,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes scroll-down {
+  0% { opacity: 0; transform: translateY(-10px); }
+  50% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(10px); }
+}
+
+.animate-scroll-dot {
+  animation: scroll-down 2s infinite ease-in-out;
+}
