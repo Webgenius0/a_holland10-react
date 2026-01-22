@@ -15,18 +15,40 @@ import {
 import logo from '../assets/images/logo.png';
 import Notification from '../components/Dashboard/Shared/Notification';
 
-const SidebarItem = ({ icon: Icon, label, path, active }) => (
-    <Link
-        to={path}
-        className={`flex items-center gap-3 px-6 py-3 rounded-xl transition-all duration-300 ${active
-            ? "bg-[#EAD49E] text-[#06211B] font-bold shadow-md"
-            : "text-[#6C7E7B] hover:bg-[#F8FAFA] hover:text-[#06211B]"
-            }`}
-    >
-        <Icon size={20} />
-        <span className="text-sm">{label}</span>
-    </Link>
-);
+const SidebarItem = ({ icon: Icon, label, path, active, subItems }) => {
+    const location = useLocation();
+    return (
+        <div className="space-y-1">
+            <Link
+                to={path}
+                className={`flex items-center gap-3 px-6 py-3 rounded-xl transition-all duration-300 ${active
+                    ? "bg-[#EAD49E] text-[#06211B] font-bold shadow-md"
+                    : "text-[#6C7E7B] hover:bg-[#F8FAFA] hover:text-[#06211B]"
+                    }`}
+            >
+                {Icon && <Icon size={20} />}
+                <span className="text-sm">{label}</span>
+            </Link>
+            {subItems && (
+                <div className="ml-12 space-y-2 py-1">
+                    {subItems.map((sub, idx) => (
+                        <Link
+                            key={idx}
+                            to={sub.path}
+                            className={`flex items-center gap-2 text-xs font-medium py-1 transition-colors ${location.pathname === sub.path
+                                    ? "text-[#06211B] font-bold"
+                                    : "text-[#A3B1AF] hover:text-[#06211B]"
+                                }`}
+                        >
+                            <div className={`w-1 h-1 rounded-full ${location.pathname === sub.path ? 'bg-[#EAD49E]' : 'bg-[#A3B1AF]'}`}></div>
+                            {sub.label}
+                        </Link>
+                    ))}
+                </div>
+            )}
+        </div>
+    );
+};
 
 const DashboardLayout = () => {
     const location = useLocation();
@@ -38,7 +60,15 @@ const DashboardLayout = () => {
         { icon: List, label: "Stallions List", path: "/dashboard/stallions" },
         { icon: Calendar, label: "Gameweeks", path: "/dashboard/gameweeks" },
         { icon: Calendar, label: "Transfers", path: "/dashboard/transfers" },
-        { icon: Trophy, label: "Leaderboards", path: "/dashboard/leaderboards" },
+        {
+            icon: Trophy,
+            label: "Leaderboards",
+            path: "/dashboard/leaderboards",
+            subItems: [
+                { label: "Public league", path: "/dashboard/leaderboards" },
+                { label: "Private league", path: "/dashboard/leaderboards/private" }
+            ]
+        },
     ];
 
     const managementItems = [
@@ -71,7 +101,7 @@ const DashboardLayout = () => {
                             <SidebarItem
                                 key={idx}
                                 {...item}
-                                active={location.pathname === item.path || (item.path === "/dashboard" && location.pathname === "/dashboard")}
+                                active={location.pathname === item.path || location.pathname.startsWith(item.path)}
                             />
                         ))}
 
@@ -80,6 +110,7 @@ const DashboardLayout = () => {
                             <SidebarItem
                                 key={idx}
                                 {...item}
+                                active={location.pathname === item.path}
                             />
                         ))}
                     </nav>

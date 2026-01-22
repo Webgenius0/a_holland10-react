@@ -16,6 +16,8 @@ import Dashboard from '@/pages/dashboard/Dashboard';
 import TeamBuilder from '@/pages/dashboard/TeamBuilder';
 import StallionsList from '@/pages/dashboard/StallionsList';
 import Settings from '@/pages/dashboard/Settings';
+import Gameweeks from '@/pages/dashboard/Gameweeks';
+import Leaderboards from '@/pages/dashboard/Leaderboards';
 import { createBrowserRouter } from 'react-router-dom';
 
 const router = createBrowserRouter([
@@ -82,6 +84,18 @@ const router = createBrowserRouter([
       {
         path: '/dashboard/settings',
         element: <Settings />,
+      },
+      {
+        path: '/dashboard/gameweeks',
+        element: <Gameweeks />,
+      },
+      {
+        path: '/dashboard/leaderboards',
+        element: <Leaderboards />,
+      },
+      {
+        path: '/dashboard/leaderboards/private',
+        element: <Leaderboards />,
       },
     ],
   },
