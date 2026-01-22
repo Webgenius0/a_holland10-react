@@ -1,6 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo.png'
 
 // Import Swiper styles
@@ -79,45 +80,47 @@ const Insight = () => {
                     >
                         {insights.map((item, idx) => (
                             <SwiperSlide key={idx} className="h-auto">
-                                <div className="bg-white rounded-[32px] flex flex-col shadow-[0_4px_25px_rgba(0,0,0,0.06)] h-full overflow-hidden border border-[#F1F5F5] group">
-                                    {/* Image Container with specific scoop */}
-                                    <div className="relative aspect-[16/11]">
-                                        <div
-                                            className="w-full h-full overflow-hidden"
-                                            style={{
-                                                maskImage: 'radial-gradient(circle 50px at 18% 100%, transparent 98%, black 100%)',
-                                                WebkitMaskImage: 'radial-gradient(circle 50px at 18% 100%, transparent 98%, black 100%)'
-                                            }}
-                                        >
-                                            <img
-                                                src={item.image}
-                                                alt={item.title}
-                                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                                            />
-                                        </div>
-
-                                        {/* Logo container - positioned to fill the mask notch */}
-                                        <div className="absolute bottom-[-14px] left-[18%] -translate-x-1/2 w-[72px] h-[72px] bg-white rounded-full flex items-center justify-center z-10 p-1">
-                                            <div className="w-full h-full rounded-full bg-[#06211B] flex items-center justify-center overflow-hidden border border-white/10">
+                                <Link to="/blog/1" className="block h-full">
+                                    <div className="bg-white rounded-[32px] flex flex-col shadow-[0_4px_25px_rgba(0,0,0,0.06)] h-full overflow-hidden border border-[#F1F5F5] group">
+                                        {/* Image Container with specific scoop */}
+                                        <div className="relative aspect-[16/11]">
+                                            <div
+                                                className="w-full h-full overflow-hidden"
+                                                style={{
+                                                    maskImage: 'radial-gradient(circle 50px at 18% 100%, transparent 98%, black 100%)',
+                                                    WebkitMaskImage: 'radial-gradient(circle 50px at 18% 100%, transparent 98%, black 100%)'
+                                                }}
+                                            >
                                                 <img
-                                                    src={item.logo}
-                                                    alt="Logo"
-                                                    className="w-full h-full object-contain p-2.5"
+                                                    src={item.image}
+                                                    alt={item.title}
+                                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                                 />
                                             </div>
+
+                                            {/* Logo container - positioned to fill the mask notch */}
+                                            <div className="absolute bottom-[-14px] left-[18%] -translate-x-1/2 w-[72px] h-[72px] bg-white rounded-full flex items-center justify-center z-10 p-1">
+                                                <div className="w-full h-full rounded-full bg-[#06211B] flex items-center justify-center overflow-hidden border border-white/10">
+                                                    <img
+                                                        src={item.logo}
+                                                        alt="Logo"
+                                                        className="w-full h-full object-contain p-2.5"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {/* Content */}
+                                        <div className="p-8 pt-12 flex flex-col flex-grow">
+                                            <span className="text-[#9BA9A6] text-lg font-medium mb-4 block">
+                                                {item.date}
+                                            </span>
+                                            <h3 className="text-xl md:text-2xl font-bold text-[#06211B] leading-tight line-clamp-2 group-hover:text-[#EAD49E] transition-colors">
+                                                {item.title}
+                                            </h3>
                                         </div>
                                     </div>
-
-                                    {/* Content */}
-                                    <div className="p-8 pt-12 flex flex-col flex-grow">
-                                        <span className="text-[#9BA9A6] text-lg font-medium mb-4 block">
-                                            {item.date}
-                                        </span>
-                                        <h3 className="text-xl md:text-2xl font-bold text-[#06211B] leading-tight line-clamp-2">
-                                            {item.title}
-                                        </h3>
-                                    </div>
-                                </div>
+                                </Link>
                             </SwiperSlide>
                         ))}
                     </Swiper>

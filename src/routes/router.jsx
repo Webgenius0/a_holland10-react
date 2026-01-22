@@ -18,6 +18,7 @@ import StallionsList from '@/pages/dashboard/StallionsList';
 import Settings from '@/pages/dashboard/Settings';
 import Gameweeks from '@/pages/dashboard/Gameweeks';
 import Leaderboards from '@/pages/dashboard/Leaderboards';
+import BlogDetails from '@/pages/main/BlogDetails';
 import { createBrowserRouter } from 'react-router-dom';
 
 const router = createBrowserRouter([
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
+      },
+      {
+        path: '/blog/:id',
+        element: <BlogDetails />,
       },
       {
         path: '/faq',
