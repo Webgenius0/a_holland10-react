@@ -49,7 +49,7 @@ const Insight = () => {
                     <h2 className="text-4xl md:text-5xl font-bold text-[#06211B] mb-6">
                         Insight from the experts
                     </h2>
-                    <p className="text-[#6C7E7B] text-lg max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-[#637381] text-lg max-w-2xl mx-auto leading-relaxed">
                         Four simple steps to start competing in the most exciting fantasy racing game
                     </p>
                 </div>

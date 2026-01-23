@@ -15,7 +15,7 @@ const Footer = () => {
               <span>STALLION</span>
             </div>
           </div>
-          <p className="text-[#6C7E7B] text-sm leading-relaxed max-w-sm">
+          <p className="text-[#637381] text-sm leading-relaxed max-w-sm">
             The proper Footer on proper time can preserve you protection. We assist you make sureverybody forward.
           </p>
           <div className="flex items-center gap-4">
@@ -40,7 +40,7 @@ const Footer = () => {
         <div className="flex flex-col gap-6">
           <h4 className="text-lg font-bold text-[#06211B]">Quick link</h4>
           <div className="w-10 h-1 bg-[#EDD191] -mt-4 mb-2"></div>
-          <ul className="flex flex-col gap-4 text-[#6C7E7B] text-sm">
+          <ul className="flex flex-col gap-4 text-[#637381] text-sm">
             <li><Link to="/" className="hover:text-[#EDD191] transition-colors flex items-center gap-2"><span>›</span> Home</Link></li>
             <li><Link to="/pricing" className="hover:text-[#EDD191] transition-colors flex items-center gap-2"><span>›</span> Pricing</Link></li>
             <li><Link to="/faq" className="hover:text-[#EDD191] transition-colors flex items-center gap-2"><span>›</span> FAQ</Link></li>
@@ -52,7 +52,7 @@ const Footer = () => {
         <div className="flex flex-col gap-6">
           <h4 className="text-lg font-bold text-[#06211B]">Contact</h4>
           <div className="w-10 h-1 bg-[#EDD191] -mt-4 mb-2"></div>
-          <ul className="flex flex-col gap-5 text-[#6C7E7B] text-sm">
+          <ul className="flex flex-col gap-5 text-[#637381] text-sm">
             <li className="flex items-center gap-3">
               <MapPin size={18} className="text-[#EDD191] shrink-0" />
               <span>44 Danvers, NY City, USA, 70-102</span>
@@ -79,7 +79,7 @@ const Footer = () => {
           </svg>
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 text-center text-[#6C7E7B] text-xs font-medium">
+        <div className="max-w-7xl mx-auto px-6 text-center text-[#637381] text-xs font-medium">
           © 2026 Stallion Fantasy League. All Rights Reserved.
         </div>
       </div>

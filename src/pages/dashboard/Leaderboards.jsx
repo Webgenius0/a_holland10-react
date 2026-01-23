@@ -27,7 +27,7 @@ const Leaderboards = () => {
             <div className="bg-white rounded-[32px] p-10 flex items-center justify-between relative overflow-hidden border border-[#F1F5F5] shadow-sm">
                 <div className="relative z-10">
                     <h1 className="text-3xl font-bold text-[#06211B] mb-2">Leaderboards</h1>
-                    <p className="text-[#6C7E7B] text-sm max-w-[320px] leading-relaxed">
+                    <p className="text-[#637381] text-sm max-w-[320px] leading-relaxed">
                         The best and most competitive fantasy stallions league in the world.
                     </p>
                 </div>
@@ -98,7 +98,7 @@ const Leaderboards = () => {
                             <Lock className="text-[#EAD49E]" size={32} />
                         </div>
                         <h2 className="text-2xl font-bold text-[#06211B] mb-4">Unlock Private League</h2>
-                        <p className="text-sm text-[#6C7E7B] mb-10 max-w-[320px] mx-auto leading-relaxed">
+                        <p className="text-sm text-[#637381] mb-10 max-w-[320px] mx-auto leading-relaxed">
                             The best and most competitive Private stallions league in the world.
                         </p>
                         <div className="grid grid-cols-2 gap-4">
@@ -124,7 +124,7 @@ const Leaderboards = () => {
                             <Lock className="text-[#EAD49E]" size={32} />
                         </div>
                         <h2 className="text-2xl font-bold text-[#06211B] mb-4">Unlock Private League</h2>
-                        <p className="text-sm text-[#6C7E7B] mb-8 leading-relaxed">
+                        <p className="text-sm text-[#637381] mb-8 leading-relaxed">
                             The best and most competitive Private stallions league in the world.
                         </p>
                         <div className="space-y-4 max-w-sm mx-auto">
@@ -136,7 +136,7 @@ const Leaderboards = () => {
                             <button className="w-full h-14 bg-[#EAD49E] text-[#06211B] font-bold rounded-2xl hover:bg-[#D4B47F] transition-all">
                                 Submit
                             </button>
-                            <button className="text-xs font-bold text-[#6C7E7B] hover:text-[#06211B]" onClick={() => setShowJoinModal(false)}>
+                            <button className="text-xs font-bold text-[#637381] hover:text-[#06211B]" onClick={() => setShowJoinModal(false)}>
                                 Back
                             </button>
                         </div>

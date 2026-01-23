@@ -27,7 +27,7 @@ const Settings = () => {
         <div className="space-y-8" data-aos="fade-up">
             <div>
                 <h1 className="text-2xl font-bold text-[#06211B] mb-1">Account</h1>
-                <div className="flex items-center gap-2 text-xs text-[#6C7E7B] font-medium">
+                <div className="flex items-center gap-2 text-xs text-[#637381] font-medium">
                     <span>Dashboard</span>
                     <span>•</span>
                     <span>Setting</span>
@@ -45,8 +45,8 @@ const Settings = () => {
                         key={tab.id}
                         onClick={() => setActiveTab(tab.id)}
                         className={`flex items-center gap-2 pb-4 text-xs font-bold transition-all relative ${activeTab === tab.id
-                                ? "text-[#06211B]"
-                                : "text-[#A3B1AF] hover:text-[#6C7E7B]"
+                            ? "text-[#06211B]"
+                            : "text-[#A3B1AF] hover:text-[#637381]"
                             }`}
                     >
                         <tab.icon size={16} />

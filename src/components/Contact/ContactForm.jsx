@@ -18,28 +18,28 @@ const ContactForm = () => {
                             <input
                                 type="text"
                                 placeholder="Name"
-                                className="w-full p-4 md:p-5 text-[#06211B] placeholder:text-[#6C7E7B]/50 focus:outline-none focus:bg-[#F4F7F7]/30 transition-all"
+                                className="w-full p-4 md:p-5 text-[#06211B] placeholder:text-[#637381]/50 focus:outline-none focus:bg-[#F4F7F7]/30 transition-all"
                             />
                         </div>
                         <div className="bg-white border border-[#F4F7F7] shadow-sm rounded-lg overflow-hidden">
                             <input
                                 type="email"
                                 placeholder="Email"
-                                className="w-full p-4 md:p-5 text-[#06211B] placeholder:text-[#6C7E7B]/50 focus:outline-none focus:bg-[#F4F7F7]/30 transition-all"
+                                className="w-full p-4 md:p-5 text-[#06211B] placeholder:text-[#637381]/50 focus:outline-none focus:bg-[#F4F7F7]/30 transition-all"
                             />
                         </div>
                         <div className="bg-white border border-[#F4F7F7] shadow-sm rounded-lg overflow-hidden">
                             <input
                                 type="text"
                                 placeholder="Subject"
-                                className="w-full p-4 md:p-5 text-[#06211B] placeholder:text-[#6C7E7B]/50 focus:outline-none focus:bg-[#F4F7F7]/30 transition-all"
+                                className="w-full p-4 md:p-5 text-[#06211B] placeholder:text-[#637381]/50 focus:outline-none focus:bg-[#F4F7F7]/30 transition-all"
                             />
                         </div>
                         <div className="bg-white border border-[#F4F7F7] shadow-sm rounded-lg overflow-hidden">
                             <textarea
                                 placeholder="Enter your message here."
                                 rows={6}
-                                className="w-full p-4 md:p-5 text-[#06211B] placeholder:text-[#6C7E7B]/50 focus:outline-none focus:bg-[#F4F7F7]/30 transition-all resize-none"
+                                className="w-full p-4 md:p-5 text-[#06211B] placeholder:text-[#637381]/50 focus:outline-none focus:bg-[#F4F7F7]/30 transition-all resize-none"
                             />
                         </div>
 

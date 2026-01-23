@@ -16,7 +16,7 @@ const StallionsList = () => {
         <div className="space-y-8" data-aos="fade-up">
             <div>
                 <h1 className="text-2xl font-bold text-[#06211B] mb-1">Stallion List</h1>
-                <p className="text-sm text-[#6C7E7B]">Browse all available stallions and view their performance</p>
+                <p className="text-sm text-[#637381]">Browse all available stallions and view their performance</p>
             </div>
 
             {/* Filter Bar */}
@@ -75,9 +75,9 @@ const StallionsList = () => {
                                         </div>
                                     </td>
                                     <td className="py-5">
-                                        <span className="text-xs font-bold text-[#6C7E7B] px-3 py-1 rounded-lg bg-[#F8FAFA]">{stallion.type}</span>
+                                        <span className="text-xs font-bold text-[#637381] px-3 py-1 rounded-lg bg-[#F8FAFA]">{stallion.type}</span>
                                     </td>
-                                    <td className="py-5 text-sm font-bold text-[#6C7E7B]">{stallion.nationality}</td>
+                                    <td className="py-5 text-sm font-bold text-[#637381]">{stallion.nationality}</td>
                                     <td className="py-5">
                                         <div className="flex items-center gap-2">
                                             <div className="w-16 h-1.5 bg-[#F1F5F5] rounded-full overflow-hidden">
@@ -112,7 +112,7 @@ const StallionsList = () => {
                             onClick={() => setSelectedStallion(null)}
                             className="absolute top-6 right-6 p-2 rounded-full hover:bg-gray-100 transition-colors"
                         >
-                            <X size={20} className="text-[#6C7E7B]" />
+                            <X size={20} className="text-[#637381]" />
                         </button>
 
                         <div className="mb-8">
@@ -122,7 +122,7 @@ const StallionsList = () => {
                                 </div>
                                 <div>
                                     <h2 className="text-2xl font-bold text-[#06211B]">{selectedStallion.name}</h2>
-                                    <p className="text-[#6C7E7B] font-bold text-sm tracking-widest uppercase">{selectedStallion.type} • {selectedStallion.nationality}</p>
+                                    <p className="text-[#637381] font-bold text-sm tracking-widest uppercase">{selectedStallion.type} • {selectedStallion.nationality}</p>
                                 </div>
                             </div>
                         </div>

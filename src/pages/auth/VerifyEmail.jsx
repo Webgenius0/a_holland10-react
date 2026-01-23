@@ -37,7 +37,7 @@ const VerifyEmail = () => {
                         <h1 className="text-2xl font-bold text-[#06211B] mb-3">
                             Please check your email!
                         </h1>
-                        <p className="text-[#6C7E7B] text-sm leading-relaxed mb-10">
+                        <p className="text-[#637381] text-sm leading-relaxed mb-10">
                             We've emailed a 5-digit confirmation code to u.s@arabian.com, please enter the code in below box to verify your email.
                         </p>
                     </div>
@@ -66,7 +66,7 @@ const VerifyEmail = () => {
                         </button>
 
                         <div className="text-center space-y-4">
-                            <p className="text-sm text-[#6C7E7B]">
+                            <p className="text-sm text-[#637381]">
                                 Didn't receive code? <button type="button" className="font-bold text-[#D4B47F] hover:underline">Resend code</button>
                             </p>
                             <div>

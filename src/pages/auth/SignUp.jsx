@@ -10,7 +10,7 @@ const SignUp = () => {
             <h1 className="text-3xl font-bold text-[#06211B] mb-2 text-center lg:text-left">
                 Welcome to Stallion Fantasy League
             </h1>
-            <p className="text-[#6C7E7B] mb-10 text-center lg:text-left">
+            <p className="text-[#637381] mb-10 text-center lg:text-left">
                 Create your account to start your journey
             </p>
 
@@ -76,7 +76,7 @@ const SignUp = () => {
                         id="terms"
                         className="mt-1 w-4 h-4 rounded border-[#E5E9E8] text-[#D4B47F] focus:ring-[#D4B47F]"
                     />
-                    <label htmlFor="terms" className="text-sm text-[#6C7E7B] leading-relaxed">
+                    <label htmlFor="terms" className="text-sm text-[#637381] leading-relaxed">
                         By continuing, you agree to the <Link className="font-bold text-[#06211B] hover:text-[#D4B47F]">Terms & Conditions</Link>
                     </label>
                 </div>
@@ -106,7 +106,7 @@ const SignUp = () => {
                     </button>
                 </div>
 
-                <p className="text-center text-[#6C7E7B] mt-10">
+                <p className="text-center text-[#637381] mt-10">
                     Already have an account? <Link to="/login" className="font-bold text-[#D4B47F] hover:underline">Sign In</Link>
                 </p>
             </form>

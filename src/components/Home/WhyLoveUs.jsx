@@ -30,7 +30,7 @@ const WhyLoveUs = () => {
                     <h2 className="text-4xl md:text-5xl font-bold text-[#06211B] mb-6">
                         Why Players Love Us
                     </h2>
-                    <p className="text-[#6C7E7B] text-lg max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-[#637381] text-lg max-w-2xl mx-auto leading-relaxed">
                         Four simple steps to start competing in the most exciting fantasy racing game
                     </p>
                 </div>
@@ -43,8 +43,8 @@ const WhyLoveUs = () => {
                             data-aos="fade-up"
                             data-delay={idx * 100}
                             className={`relative bg-white rounded-[32px] p-10 flex flex-col items-center text-center transition-all duration-500 ${feature.featured
-                                    ? "shadow-[0_40px_80px_rgba(0,0,0,0.1)] scale-105 z-10 py-16"
-                                    : "shadow-[0_10px_40px_rgba(0,0,0,0.03)] opacity-90"
+                                ? "shadow-[0_40px_80px_rgba(0,0,0,0.1)] scale-105 z-10 py-16"
+                                : "shadow-[0_10px_40px_rgba(0,0,0,0.03)] opacity-90"
                                 }`}
                         >
                             {/* Icon Container */}
@@ -58,7 +58,7 @@ const WhyLoveUs = () => {
                             </h3>
 
                             {/* Description */}
-                            <p className="text-[#6C7E7B] leading-relaxed">
+                            <p className="text-[#637381] leading-relaxed">
                                 {feature.description}
                             </p>
                         </div>

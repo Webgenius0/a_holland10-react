@@ -19,7 +19,7 @@ const ResetPassword = () => {
                         <h1 className="text-2xl font-bold text-[#06211B] mb-3">
                             Set New Password
                         </h1>
-                        <p className="text-[#6C7E7B] text-sm leading-relaxed">
+                        <p className="text-[#637381] text-sm leading-relaxed">
                             Please enter the email address associated with your account, and we'll email you a link to reset your password.
                         </p>
                     </div>

@@ -30,7 +30,7 @@ const TeamBuilder = () => {
         <div className="space-y-6" data-aos="fade-up">
             <div>
                 <h1 className="text-2xl font-bold text-[#06211B] mb-1">Team Builder</h1>
-                <p className="text-sm text-[#6C7E7B]">Select 7 stallions for your team</p>
+                <p className="text-sm text-[#637381]">Select 7 stallions for your team</p>
             </div>
 
             {/* Alert Info Bar */}
@@ -113,8 +113,8 @@ const TeamBuilder = () => {
                                     <button
                                         onClick={() => toggleStallion(stallion)}
                                         className={`w-8 h-8 rounded-lg flex items-center justify-center transition-all ${selectedStallions.find(s => s.id === stallion.id)
-                                                ? "bg-[#EAD49E] text-white"
-                                                : "bg-[#FFF9EA] text-[#EAD49E] hover:bg-[#EAD49E] hover:text-[#06211B]"
+                                            ? "bg-[#EAD49E] text-white"
+                                            : "bg-[#FFF9EA] text-[#EAD49E] hover:bg-[#EAD49E] hover:text-[#06211B]"
                                             }`}
                                     >
                                         <Plus size={18} />
@@ -132,15 +132,15 @@ const TeamBuilder = () => {
 
                         <div className="space-y-4 mb-8">
                             <div className="flex justify-between items-center text-xs">
-                                <span className="text-[#6C7E7B] font-medium">Budget Used:</span>
+                                <span className="text-[#637381] font-medium">Budget Used:</span>
                                 <span className="text-[#06211B] font-bold">$49.5M / $100M</span>
                             </div>
                             <div className="flex justify-between items-center text-xs">
-                                <span className="text-[#6C7E7B] font-medium">Budget Remaining:</span>
+                                <span className="text-[#637381] font-medium">Budget Remaining:</span>
                                 <span className="text-[#06211B] font-bold">$0.5M</span>
                             </div>
                             <div className="flex justify-between items-center text-xs">
-                                <span className="text-[#6C7E7B] font-medium">First Season Sires:</span>
+                                <span className="text-[#637381] font-medium">First Season Sires:</span>
                                 <span className="text-[#22C55E] font-bold">{firstSeasonCount} / 2</span>
                             </div>
                         </div>
@@ -190,8 +190,8 @@ const TeamBuilder = () => {
 
                         <button
                             className={`w-full h-14 font-bold rounded-xl mt-8 transition-all shadow-lg ${isTeamComplete
-                                    ? "bg-[#22C55E] text-white hover:bg-[#16A34A]"
-                                    : "bg-[#E5E9E8] text-[#A3B1AF] cursor-not-allowed"
+                                ? "bg-[#22C55E] text-white hover:bg-[#16A34A]"
+                                : "bg-[#E5E9E8] text-[#A3B1AF] cursor-not-allowed"
                                 }`}
                         >
                             Save Team

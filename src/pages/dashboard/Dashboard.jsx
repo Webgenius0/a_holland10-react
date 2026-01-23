@@ -40,7 +40,7 @@ const Dashboard = () => {
                                 <h1 className="text-3xl font-bold text-[#06211B] mb-2 leading-tight">
                                     Welcome back <br /> Stallion Fantasy League !
                                 </h1>
-                                <p className="text-[#6C7E7B] text-sm mb-8 leading-relaxed max-w-[320px]">
+                                <p className="text-[#637381] text-sm mb-8 leading-relaxed max-w-[320px]">
                                     If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything.
                                 </p>
                                 <button className="bg-[#EAD49E] text-[#06211B] px-8 py-2.5 rounded-xl font-bold text-sm hover:bg-[#D4B47F] transition-all shadow-sm">
@@ -110,7 +110,7 @@ const Dashboard = () => {
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold text-[#06211B] leading-none mb-1">Gameweek</h3>
-                                    <p className="text-xs text-[#6C7E7B] font-medium">Dubai World Cup Weekend</p>
+                                    <p className="text-xs text-[#637381] font-medium">Dubai World Cup Weekend</p>
                                 </div>
                             </div>
                             <button

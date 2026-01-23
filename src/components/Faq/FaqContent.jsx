@@ -41,7 +41,7 @@ const FaqContent = () => {
                                         <AccordionTrigger className="text-[#06211B] font-bold text-lg hover:no-underline py-6">
                                             {faq.question}
                                         </AccordionTrigger>
-                                        <AccordionContent className="text-[#6C7E7B] text-base leading-relaxed pb-6">
+                                        <AccordionContent className="text-[#637381] text-base leading-relaxed pb-6">
                                             {faq.answer}
                                         </AccordionContent>
                                     </AccordionItem>
@@ -59,22 +59,22 @@ const FaqContent = () => {
                                     <input
                                         type="text"
                                         placeholder="Name"
-                                        className="w-full bg-[#F4F7F7] border-none rounded-lg p-5 text-[#06211B] placeholder:text-[#6C7E7B]/50 transition-all text-base outline-none focus:bg-[#EBF1F1]"
+                                        className="w-full bg-[#F4F7F7] border-none rounded-lg p-5 text-[#06211B] placeholder:text-[#637381]/50 transition-all text-base outline-none focus:bg-[#EBF1F1]"
                                     />
                                     <input
                                         type="email"
                                         placeholder="Email"
-                                        className="w-full bg-[#F4F7F7] border-none rounded-lg p-5 text-[#06211B] placeholder:text-[#6C7E7B]/50 transition-all text-base outline-none focus:bg-[#EBF1F1]"
+                                        className="w-full bg-[#F4F7F7] border-none rounded-lg p-5 text-[#06211B] placeholder:text-[#637381]/50 transition-all text-base outline-none focus:bg-[#EBF1F1]"
                                     />
                                     <input
                                         type="text"
                                         placeholder="Subject"
-                                        className="w-full bg-[#F4F7F7] border-none rounded-lg p-5 text-[#06211B] placeholder:text-[#6C7E7B]/50 transition-all text-base outline-none focus:bg-[#EBF1F1]"
+                                        className="w-full bg-[#F4F7F7] border-none rounded-lg p-5 text-[#06211B] placeholder:text-[#637381]/50 transition-all text-base outline-none focus:bg-[#EBF1F1]"
                                     />
                                     <textarea
                                         placeholder="Enter your message here."
                                         rows={5}
-                                        className="w-full bg-[#F4F7F7] border-none rounded-lg p-5 text-[#06211B] placeholder:text-[#6C7E7B]/50 transition-all text-base outline-none resize-none focus:bg-[#EBF1F1]"
+                                        className="w-full bg-[#F4F7F7] border-none rounded-lg p-5 text-[#06211B] placeholder:text-[#637381]/50 transition-all text-base outline-none resize-none focus:bg-[#EBF1F1]"
                                     />
                                     <div className="mt-2">
                                         <Button

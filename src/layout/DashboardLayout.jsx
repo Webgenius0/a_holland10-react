@@ -23,7 +23,7 @@ const SidebarItem = ({ icon: Icon, label, path, active, subItems }) => {
                 to={path}
                 className={`flex items-center gap-3 px-6 py-3 rounded-xl transition-all duration-300 ${active
                     ? "bg-[#EAD49E] text-[#06211B] font-bold shadow-md"
-                    : "text-[#6C7E7B] hover:bg-[#F8FAFA] hover:text-[#06211B]"
+                    : "text-[#637381] hover:bg-[#F8FAFA] hover:text-[#06211B]"
                     }`}
             >
                 {Icon && <Icon size={20} />}
@@ -36,8 +36,8 @@ const SidebarItem = ({ icon: Icon, label, path, active, subItems }) => {
                             key={idx}
                             to={sub.path}
                             className={`flex items-center gap-2 text-xs font-medium py-1 transition-colors ${location.pathname === sub.path
-                                    ? "text-[#06211B] font-bold"
-                                    : "text-[#A3B1AF] hover:text-[#06211B]"
+                                ? "text-[#06211B] font-bold"
+                                : "text-[#A3B1AF] hover:text-[#06211B]"
                                 }`}
                         >
                             <div className={`w-1 h-1 rounded-full ${location.pathname === sub.path ? 'bg-[#EAD49E]' : 'bg-[#A3B1AF]'}`}></div>
@@ -133,7 +133,7 @@ const DashboardLayout = () => {
                     <div className="flex items-center gap-6 relative">
                         <button
                             onClick={() => setIsNotificationOpen(!isNotificationOpen)}
-                            className={`relative p-2 transition-colors rounded-full ${isNotificationOpen ? 'bg-[#F8FAFA] text-[#06211B]' : 'text-[#6C7E7B] hover:text-[#06211B]'}`}
+                            className={`relative p-2 transition-colors rounded-full ${isNotificationOpen ? 'bg-[#F8FAFA] text-[#06211B]' : 'text-[#637381] hover:text-[#06211B]'}`}
                         >
                             <Bell size={22} />
                             <span className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-white"></span>

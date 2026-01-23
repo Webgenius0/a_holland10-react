@@ -39,7 +39,7 @@ const Gameweeks = () => {
         <div className="space-y-8" data-aos="fade-up">
             <div>
                 <h1 className="text-2xl font-bold text-[#06211B] mb-1">Gameweek Overview</h1>
-                <p className="text-sm text-[#6C7E7B]">Select 7 stallions for your team</p>
+                <p className="text-sm text-[#637381]">Select 7 stallions for your team</p>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -48,7 +48,7 @@ const Gameweeks = () => {
                     {/* Top Stats Row */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="bg-white rounded-[24px] p-6 shadow-sm border border-[#F1F5F5] flex items-center gap-4">
-                            <div className="w-12 h-12 rounded-xl bg-[#F8FAFA] flex items-center justify-center text-[#6C7E7B]">
+                            <div className="w-12 h-12 rounded-xl bg-[#F8FAFA] flex items-center justify-center text-[#637381]">
                                 <Calendar size={24} />
                             </div>
                             <div>
@@ -57,7 +57,7 @@ const Gameweeks = () => {
                             </div>
                         </div>
                         <div className="bg-white rounded-[24px] p-6 shadow-sm border border-[#F1F5F5] flex items-center gap-4">
-                            <div className="w-12 h-12 rounded-xl bg-[#F8FAFA] flex items-center justify-center text-[#6C7E7B]">
+                            <div className="w-12 h-12 rounded-xl bg-[#F8FAFA] flex items-center justify-center text-[#637381]">
                                 <Clock size={24} />
                             </div>
                             <div className="flex-1">

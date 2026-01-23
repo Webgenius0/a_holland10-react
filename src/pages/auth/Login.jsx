@@ -10,7 +10,7 @@ const Login = () => {
             <h1 className="text-3xl font-bold text-[#06211B] mb-2 text-center lg:text-left">
                 Welcome to Stallion Fantasy League
             </h1>
-            <p className="text-[#6C7E7B] mb-10 text-center lg:text-left">
+            <p className="text-[#637381] mb-10 text-center lg:text-left">
                 Create your account to start your journey
             </p>
 
@@ -55,7 +55,7 @@ const Login = () => {
                             id="remember"
                             className="w-4 h-4 rounded border-[#E5E9E8] text-[#D4B47F] focus:ring-[#D4B47F]"
                         />
-                        <label htmlFor="remember" className="text-sm text-[#6C7E7B]">Remember me</label>
+                        <label htmlFor="remember" className="text-sm text-[#637381]">Remember me</label>
                     </div>
                     <Link to="/forgot-password" size="sm" className="text-sm font-semibold text-[#06211B] hover:text-[#D4B47F] transition-colors">
                         Forgot Password?
@@ -87,7 +87,7 @@ const Login = () => {
                     </button>
                 </div>
 
-                <p className="text-center text-[#6C7E7B] mt-10">
+                <p className="text-center text-[#637381] mt-10">
                     Don't have an account? <Link to="/sign-up" className="font-bold text-[#D4B47F] hover:underline">Create Account</Link>
                 </p>
             </form>

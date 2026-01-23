@@ -9,7 +9,7 @@ const NotificationItem = ({ icon: Icon, iconBg, title, description, time, isNew 
         <div className="flex-1">
             <p className="text-[13px] leading-tight mb-1">
                 <span className="font-bold text-[#06211B]">{title}</span>
-                <span className="text-[#6C7E7B] ml-1">{description}</span>
+                <span className="text-[#637381] ml-1">{description}</span>
             </p>
             <div className="flex items-center gap-1.5 text-[10px] text-[#A3B1AF] font-bold">
                 <Clock size={12} />
@@ -32,7 +32,7 @@ const Notification = ({ isOpen, onClose }) => {
                         <CheckCheck size={20} />
                     </button>
                 </div>
-                <p className="text-xs text-[#6C7E7B]">You have 4 unread messages</p>
+                <p className="text-xs text-[#637381]">You have 4 unread messages</p>
             </div>
 
             {/* Scrollable Content */}
