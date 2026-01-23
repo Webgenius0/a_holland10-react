@@ -86,20 +86,25 @@ const Insight = () => {
                                         <div className="relative aspect-[16/11]">
                                             <div
                                                 className="w-full h-full overflow-hidden"
-                                                style={{
-                                                    maskImage: 'radial-gradient(circle 50px at 18% 100%, transparent 98%, black 100%)',
-                                                    WebkitMaskImage: 'radial-gradient(circle 50px at 18% 100%, transparent 98%, black 100%)'
-                                                }}
+                                                // style={{
+                                                //     maskImage: 'radial-gradient(circle 50px at 18% 100%, transparent 98%, black 100%)',
+                                                //     WebkitMaskImage: 'radial-gradient(circle 40px at 22% 100%, transparent 98%, black 100%)'
+                                                // }}
                                             >
                                                 <img
                                                     src={item.image}
                                                     alt={item.title}
-                                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                                    className="w-full h-[200px] object-cover transition-transform duration-700 group-hover:scale-110"
                                                 />
+                                            </div>
+                                            <div className='absolute bottom-[-15px] left-[12px] w-[80px] h-[34.348px]'>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="35" viewBox="0 0 80 35" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M61.8556 13.2295C55.9556 7.43467 51.5778 0 40.3333 0H39.6667C28.4222 0 24.0444 7.43467 18.1444 13.2295C13.8556 18.5701 7.34444 19.7334 0 19.944V34.3479H80V19.944C72.6556 19.7334 66.1444 18.5701 61.8556 13.2295Z" fill="white" />
+                                                </svg>
                                             </div>
 
                                             {/* Logo container - positioned to fill the mask notch */}
-                                            <div className="absolute bottom-[-14px] left-[18%] -translate-x-1/2 w-[72px] h-[72px] bg-white rounded-full flex items-center justify-center z-10 p-1">
+                                            <div className="absolute bottom-[-27px] left-[51px] -translate-x-1/2 w-[42px] h-[42px]  rounded-full flex items-center justify-center z-10 ">
                                                 <div className="w-full h-full rounded-full bg-[#06211B] flex items-center justify-center overflow-hidden border border-white/10">
                                                     <img
                                                         src={item.logo}
