@@ -7,11 +7,11 @@ import joinbg from '../../assets/images/joinbg.png';
 const JoinNow = () => {
     return (
         <section className="relative mt-32 mb-20 min-h-[492px]">
-            <div className=" mx-auto px-6 md:px-12 lg:px-24">
-                <div className="relative rounded-[40px] overflow-visible bg-[#06211B]  flex items-center">
+            <div className=" mx-auto ">
+                <div className="relative  overflow-visible bg-[#06211B]  flex items-center">
 
                     {/* Background Overlay with Image */}
-                    <div className="absolute inset-0 rounded-[40px] overflow-hidden opacity-30">
+                    <div className="absolute inset-0  overflow-hidden opacity-30">
                         <img
                             src={joinbg}
                             alt="Background"

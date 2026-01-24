@@ -22,7 +22,7 @@ const WhyLoveUs = () => {
 
     return (
         <section className="py-24 bg-white">
-            <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
+            <div className="container mx-auto px-6 md:px-12 lg:px-24">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold text-[#06211B] mb-6">
                         Why Players Love Us

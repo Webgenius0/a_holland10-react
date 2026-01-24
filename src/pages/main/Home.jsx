@@ -13,9 +13,10 @@ const Home = () => {
       <HowToPlay />
      
       <Insight />
+      <FeaturesSection />
       <WhyLoveUs />
       <JoinNow />
-      <FeaturesSection />
+     
     </main>
   );
 }

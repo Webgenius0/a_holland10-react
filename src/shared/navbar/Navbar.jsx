@@ -37,7 +37,7 @@ const Navbar = () => {
           : "bg-[rgba(61,_61,_61,_0.20)]"
       )}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 w-[54px] h-[48px] [aspect-ratio:9/8]">
           <img src={logo} alt="" srcset="" className="w-[54px] h-[48px] [aspect-ratio:9/8]" />

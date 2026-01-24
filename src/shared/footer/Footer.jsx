@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="bg-white pt-20 relative overflow-hidden">
       {/* Top Footer Content */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 mb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+      <div className="container mx-auto  mb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
 
         {/* Brand Section */}
         <div className="flex flex-col gap-6">

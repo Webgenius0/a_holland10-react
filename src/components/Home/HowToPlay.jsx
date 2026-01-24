@@ -54,7 +54,7 @@ const HowToPlay = () => {
 
     return (
         <section className="py-24 bg-white overflow-hidden">
-            <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
+            <div className="container mx-auto ">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
                     {/* Left Side: Text Content */}

@@ -6,7 +6,7 @@ const FaqHero = () => {
     return (
         <section className="relative w-full h-[60vh] min-h-[500px] flex flex-col justify-center items-start px-6 md:px-12 lg:px-24 bg-[#06211B] overflow-hidden">
             {/* Background Image Overlay */}
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden opacity-10">
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden opacity-80">
                 <img src={faqOverlay} alt="FAQ Overlay" className="w-full h-full object-cover" />
             </div>
 
@@ -34,9 +34,9 @@ const FaqHero = () => {
             </div>
 
             {/* Scroll Indicator */}
-            <div className="absolute bottom-10 left-1/2 md:left-24 -translate-x-1/2 md:translate-x-0 opacity-60">
+            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 opacity-60">
                 <div className="w-[26px] h-[40px] border-2 border-white rounded-full flex justify-center p-1.5">
-                    <div className="w-1.5 h-1.5 bg-white rounded-full animate-scroll-dot" />
+                    <div className="w-1 h-3 bg-white rounded-full animate-bounce" />
                 </div>
             </div>
         </section>
