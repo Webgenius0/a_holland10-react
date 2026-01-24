@@ -11,9 +11,10 @@ const Home = () => {
     <main>
       <HomeHero />
       <HowToPlay />
-      <JoinNow />
+     
       <Insight />
       <WhyLoveUs />
+      <JoinNow />
       <FeaturesSection />
     </main>
   );
