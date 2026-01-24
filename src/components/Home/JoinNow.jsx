@@ -2,6 +2,7 @@ import React from 'react';
 import { Phone } from 'lucide-react';
 import horseRiderImg from '../../assets/images/horseRider.png';
 import joinNowBg from '../../assets/images/howtoplay.png'; // Using a placeholder background from existing assets
+import joinbg from '../../assets/images/joinbg.png';
 
 const JoinNow = () => {
     return (
@@ -12,7 +13,7 @@ const JoinNow = () => {
                     {/* Background Overlay with Image */}
                     <div className="absolute inset-0 rounded-[40px] overflow-hidden opacity-30">
                         <img
-                            src={joinNowBg}
+                            src={joinbg}
                             alt="Background"
                             className="w-full h-full object-cover "
                         />
@@ -40,7 +41,7 @@ const JoinNow = () => {
                         </div>
 
                         {/* Image Content - Popping Out */}
-                        <div className="relative lg:static flex justify-center lg:justify-end">
+                        <div className="relative hidden lg:static lg:flex justify-center lg:justify-end">
                             <div
                                 className="lg:absolute lg:bottom-[2px] lg:right-0 w-[300px] sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[700px] pointer-events-none"
                                 data-aos="fade-up"
