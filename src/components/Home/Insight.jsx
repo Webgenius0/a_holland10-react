@@ -3,6 +3,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo.png'
+import Blog1 from '../../assets/images/blog-1.png'
+import Blog2 from '../../assets/images/blog-2.png'
+import Blog3 from '../../assets/images/blog-3.png'
+import Blog4 from '../../assets/images/blog-4.png'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -12,33 +16,52 @@ const Insight = () => {
         {
             date: "09 Feb 2020",
             title: "DMTV Milkshake: The Future of Industrial Design with ...",
-            image: "https://images.unsplash.com/photo-1598970434795-0c54fe7c0648?q=80&w=2070&auto=format&fit=crop",
+            image: Blog1,
+            logo: logo
+        },
+        {
+            date: "09 Feb 2021",
+            title: "DMTV Milkshake: The Future of Industrial Design with ...",
+            image: Blog2,
             logo: logo
         },
         {
             date: "09 Feb 2020",
             title: "DMTV Milkshake: The Future of Industrial Design with ...",
-            image: "https://images.unsplash.com/photo-1510511459019-5dee997dd0df?q=80&w=2070&auto=format&fit=crop",
+            image: Blog3,
             logo: logo
         },
         {
             date: "09 Feb 2020",
             title: "DMTV Milkshake: The Future of Industrial Design with ...",
-            image: "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?q=80&w=2070&auto=format&fit=crop",
+            image: Blog4,
             logo: logo
         },
         {
             date: "09 Feb 2020",
             title: "DMTV Milkshake: The Future of Industrial Design with ...",
-            image: "https://images.unsplash.com/photo-1518349662322-c4573f48aa2c?q=80&w=2070&auto=format&fit=crop",
+            image: Blog1,
+            logo: logo
+        },
+        {
+            date: "09 Feb 2021",
+            title: "DMTV Milkshake: The Future of Industrial Design with ...",
+            image: Blog2,
             logo: logo
         },
         {
             date: "09 Feb 2020",
             title: "DMTV Milkshake: The Future of Industrial Design with ...",
-            image: "https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4?q=80&w=2070&auto=format&fit=crop",
+            image: Blog3,
             logo: logo
-        }
+        },
+        {
+            date: "09 Feb 2020",
+            title: "DMTV Milkshake: The Future of Industrial Design with ...",
+            image: Blog4,
+            logo: logo
+        },
+
     ];
 
     return (
