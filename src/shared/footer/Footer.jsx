@@ -1,6 +1,9 @@
 import React from 'react';
 import { Facebook, Instagram, Twitter, MessageCircle, MapPin, Mail, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/images/logo.png'
+import footerBg from '../../assets/images/footerBottom.png'
+import footerLine from '../../assets/images/footerLine.png'
 
 const Footer = () => {
   return (
@@ -12,7 +15,7 @@ const Footer = () => {
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-2">
             <div className="text-2xl font-bold text-[#06211B] tracking-widest flex items-center gap-2">
-              <span>STALLION</span>
+              <img src={logo} alt="logo" />
             </div>
           </div>
           <p className="text-[#637381] text-sm leading-relaxed max-w-sm">
@@ -39,7 +42,9 @@ const Footer = () => {
         {/* Quick Links */}
         <div className="flex flex-col gap-6">
           <h4 className="text-lg font-bold text-[#06211B]">Quick link</h4>
-          <div className="w-10 h-1 bg-[#EDD191] -mt-4 mb-2"></div>
+          <div className="w-10 h-1  -mt-4 mb-2">
+            <img src={footerLine} alt="footerLine" />
+          </div>
           <ul className="flex flex-col gap-4 text-[#637381] text-sm">
             <li><Link to="/" className="hover:text-[#EDD191] transition-colors flex items-center gap-2"><span>›</span> Home</Link></li>
             <li><Link to="/pricing" className="hover:text-[#EDD191] transition-colors flex items-center gap-2"><span>›</span> Pricing</Link></li>
@@ -51,7 +56,9 @@ const Footer = () => {
         {/* Contact Info */}
         <div className="flex flex-col gap-6">
           <h4 className="text-lg font-bold text-[#06211B]">Contact</h4>
-          <div className="w-10 h-1 bg-[#EDD191] -mt-4 mb-2"></div>
+          <div className="w-10 h-1  -mt-4 mb-2">
+            <img src={footerLine} alt="footerLine" />
+          </div>
           <ul className="flex flex-col gap-5 text-[#637381] text-sm">
             <li className="flex items-center gap-3">
               <MapPin size={18} className="text-[#EDD191] shrink-0" />
@@ -73,10 +80,8 @@ const Footer = () => {
       {/* Bottom Section with Wave Decor */}
       <div className="relative bg-[#F4F7F7] pt-12 pb-8">
         {/* Wave Overlay SVG Pattern (simplified representation) */}
-        <div className="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180 bg-white">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-[calc(100%+1.3px)] h-[50px] fill-[#F4F7F7]">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
-          </svg>
+        <div className="absolute top-0 left-0 w-full leading-none w-full h-full bg-white z-20 ">
+          <img src={footerBg} alt="footerBg" className='w-full h-full object-cover' />
         </div>
 
         <div className="max-w-7xl mx-auto px-6 text-center text-[#637381] text-xs font-medium">
